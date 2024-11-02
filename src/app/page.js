@@ -25,6 +25,8 @@ export default async function Home() {
           :
           <Link href={'/signin'} className=" ml-[45%] mx-auto border-2 border-blue-600 p-3 rounded-md mt-4 text-blue-600 bg-blue-200">Login to Continue</Link>
       }
+
+      <p className=" text-red-600 text-2xl text-center capitalize mt-4">* After Deploying your app On Vercel Or Any Other platform you need to setup by own. Thank You</p>
     </div>
   )
 
