@@ -16,7 +16,7 @@ export default async function Home() {
             <form
               action={async () => {
                 "use server"
-                await signOut("google" || "github")
+                await signOut("google")
               }}
             >
               <button type="submit" className=" ml-[45%] border-2 border-blue-600 p-3 rounded-md mt-4 text-blue-600 bg-blue-200">Sign Out</button>
