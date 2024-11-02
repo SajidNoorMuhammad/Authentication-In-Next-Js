@@ -5,6 +5,9 @@ export default async function SignIn() {
 
     const session = await auth();
     console.log(session)
+    if (session) {
+        redirect("/");
+    }
 
     return (
         <div className=" flex justify-center items-center mx-auto container">
@@ -17,7 +20,7 @@ export default async function SignIn() {
                         <form
                             action={async () => {
                                 "use server"
-                                await signOut("google" )
+                                await signOut("google")
                             }}
                         >
                             <button type="submit" className=" border-2 border-blue-600 p-3 rounded-md mt-4 text-blue-600 bg-blue-200">Sign Out</button>
