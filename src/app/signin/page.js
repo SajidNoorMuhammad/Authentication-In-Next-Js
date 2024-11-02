@@ -10,7 +10,7 @@ export default async function SignIn() {
     }
 
     return (
-        <div className=" flex justify-center items-center mx-auto container">
+        <div className=" flex justify-center items-center mx-auto">
             {
                 session ?
                     <div className=" flex flex-col justify-center items-center">
